@@ -1,0 +1,26 @@
+{
+  "name": "letcodein",
+  "version": "1.0.0",
+  "description": "Insights on software testing videos like Selenium, Protractor, Playwright, Cypress & WebDriver IO",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/mahmudurrahman-1/Cypress.git"
+  },
+  "keywords": [
+    "Cypress"
+  ],
+  "author": "Mahmudur Rahman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mahmudurrahman-1/Cypress/issues"
+  },
+  "homepage": "https://github.com/mahmudurrahman-1/Cypress#readme",
+  "devDependencies": {
+    "cypress": "^12.5.1",
+    "cypress-xpath": "^2.0.1"
+  }
+}
