@@ -21,6 +21,7 @@
   "homepage": "https://github.com/mahmudurrahman-1/Cypress#readme",
   "devDependencies": {
     "cypress": "^12.5.1",
+    "cypress-mochawesome-reporter": "^3.3.0",
     "cypress-xpath": "^2.0.1"
   }
 }

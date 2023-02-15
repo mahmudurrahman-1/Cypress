@@ -1,6 +1,8 @@
 # Cypress for the first time
 
 - npm install cypress --save-dev
+- npm install cypress-xpath --save-dev
+- npm install cypress-mochawesome-reporter --save-dev
 
 # Configure Cypress files
 
