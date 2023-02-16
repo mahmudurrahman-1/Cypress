@@ -19,3 +19,14 @@ On `cypress.config.js` under `e2e` object wite this property `specPattern: "cypr
   -- right after every locators we can do one or many actions
 - cy.contains("Write 1st arg here","write 2nd arg here","write 3rd args as optional")
   -- the first `arg` is `selector` and the second arg is `texts`
+
+# How to create reusable class functions or objects
+
+- for `classes` the file name and class name should be the same
+  -- `export class ClassName{}`
+  -- `import {ClassName} from "path"`
+  -- `const demo = new ClassName();`
+- for `functions and objects`
+  -- `export function functionName(){`
+  -- `}`  
+  -- `const demo = require("Path")`

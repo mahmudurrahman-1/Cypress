@@ -1,11 +1,23 @@
-<referece types="cypress"></referece>;
 require("cypress-xpath");
-export default class utilities {
+
+export class CommonMethods {
   titleVerify(expectedTitle) {
     return cy.title().should("eq", expectedTitle);
   }
+  findBy(path) {
+    return cy.get(path);
+  }
+  findByXpath(path) {
+    return cy.xpath(path);
+  }
+  findByContains(selector, descriptor) {
+    return cy.contains(selector, descriptor);
+  }
   sendDatabyGet(path, value) {
-    return cy.get(path).type(value);
+    return cy.get(path).clear().type(value, { delay: 100 });
+  }
+  sendDatabyXpath(path, value) {
+    return cy.xpath(path).clear().type(value, { delay: 100 });
   }
 
   selectdatabyindex(path, index, value) {

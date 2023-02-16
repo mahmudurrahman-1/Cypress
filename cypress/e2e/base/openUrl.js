@@ -1,8 +1,4 @@
-/// <reference types="cypress" />
-
-export default class open_url {
-  openUrl() {
-    cy.visit("https://letcode.in/");
-    cy.viewport(1200, 800);
-  }
+export function open_url() {
+  cy.visit("https://letcode.in/");
+  cy.viewport(1000, 800);
 }
