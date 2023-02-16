@@ -24,7 +24,11 @@ export class SignupPage {
     methods.sendDatabyGet(userName, data.name);
     //check
     methods.findBy(checkAgree).should("not.be.checked").check();
+    //take screenshot
+    methods.screenShot();
     //click to submit
     methods.findByXpath(submit).click();
+    methods.waitforthePageLoad(2000);
+    methods.screenShotSpecific("div.box.column.is-half.is-offset-one-quarter");
   }
 }

@@ -32,11 +32,11 @@ export class CommonMethods {
     return cy.get(path).select(value).invoke("val").should("eq", value);
   }
   //take screenshot
-  screenShot(name) {
-    return cy.screenshot(name);
+  screenShot() {
+    return cy.screenshot();
   }
-  screenShotSpecific(path, name) {
-    return cy.get(path).screenshot(name);
+  screenShotSpecific(path) {
+    return cy.get(path).screenshot();
   }
   //load pages
   waitforthePageLoad(miliseconds) {
