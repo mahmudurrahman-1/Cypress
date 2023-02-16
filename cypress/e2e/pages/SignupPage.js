@@ -6,11 +6,12 @@ export class SignupPage {
     //Locators
     const menuButton =
       "nav > div > div.navbar-brand > a.navbar-burger.burger.has-text-black";
-    const signUpBtn = '//a[normalize-space()="Log in"]';
+    const signUpBtn = '//a[normalize-space()="Sign up"]';
     const email = "#email";
     const password = "#pass";
     const userName = "#name";
-    const submit = '//button[normalize-space()="SIGNUP"]';
+    const checkAgree = "#agree";
+    const submit = '//button[normalize-space()="SIGN UP"]';
     //actions
     methods.titleVerify("LetCode with Koushik");
     //click menu icon button
@@ -21,6 +22,8 @@ export class SignupPage {
     methods.sendDatabyGet(email, data.email);
     methods.sendDatabyGet(password, data.password);
     methods.sendDatabyGet(userName, data.name);
+    //check
+    methods.findBy(checkAgree).should("not.be.checked").check();
     //click to submit
     methods.findByXpath(submit).click();
   }
