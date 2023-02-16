@@ -5,8 +5,9 @@ describe("login functionality test", () => {
   context("Tablet", () => {
     it("starts this first", () => {
       base.open_url();
-      //object
+      //objects
       const login = new LoginPage();
+      //actions
       login.loginProcess();
     });
   });
